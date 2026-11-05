@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dr. Dennis Brylow | PUMP-CS</title>
+<meta name="description" content="Preparing the Upper Midwest for Pathways in Computer Science (PUMP-CS) at Marquette University: sixteen years of K-12 computer science professional learning in Wisconsin.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page-id="brylow" data-portrait="img/brylow-small.png">
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="appbar" id="appbar">
+  <div class="wrap">
+    <a class="brand" href="index.html" data-nav="home">
+      <img src="img/logo-mark.png" alt="" width="57" height="60">
+      <span class="brand-text"><b>Preparing the Upper Midwest</b><span>for Pathways in Computer Science</span></span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main">
+      <ul>
+        <li><a class="nav-btn" href="index.html" data-nav="home"><span>Home</span></a></li>
+        <li>
+          <button class="nav-btn is-current" type="button" aria-expanded="false" aria-controls="m-about" data-nav="about"><span>About</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+          <ul class="submenu" id="m-about" hidden>
+            <li><a href="history.html">The PUMP-CS story</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="nav-btn" type="button" aria-expanded="false" aria-controls="m-prof-learning" data-nav="prof-learning"><span>Professional Learning</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+          <ul class="submenu" id="m-prof-learning" hidden>
+            <li><a href="elementary-school.html">Elementary School</a></li>
+            <li><a href="middle-school.html">Middle School</a></li>
+            <li><a href="high-school.html">High School</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="nav-btn" type="button" aria-expanded="false" aria-controls="m-week" data-nav="pd-week"><span>Summer PD</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+          <ul class="submenu" id="m-week" hidden>
+            <li><a href="professional-learning.html">Overview</a></li>
+            <li><a href="professional-learning.html#benefits">Participant benefits</a></li>
+            <li><a href="professional-learning.html#tracks">Workshop tracks</a></li>
+            <li><a href="professional-learning.html#support">Year-round support</a></li>
+            <li><a href="professional-learning.html#dates">Important dates</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="nav-btn" type="button" aria-expanded="false" aria-controls="m-research" data-nav="research"><span>Research</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+          <ul class="submenu" id="m-research" hidden>
+            <li><a href="research.html">Overview</a></li>
+            <li><a href="research.html#funders">Funders</a></li>
+          </ul>
+        </li>
+        <li><a class="cta-btn" href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="icon-btn menu-toggle" type="button" id="menuOpen" aria-label="Open navigation menu" aria-haspopup="dialog" aria-controls="drawer" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Navigation menu" hidden>
+  <div class="drawer-head">
+    <img src="img/logo-mark.png" alt="PUMP-CS">
+    <button class="icon-btn" type="button" id="menuClose" aria-label="Close navigation menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Main (mobile)">
+    <ul>
+      <li class="drawer-section"><a class="drawer-label" href="index.html" data-nav="home">Home</a></li>
+      <li class="drawer-section">
+        <button class="drawer-label" type="button" aria-expanded="true" aria-controls="d-about" data-nav="about">About<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+        <ul class="drawer-sub" id="d-about">
+          <li><a href="history.html">The PUMP-CS story</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </li>
+      <li class="drawer-section">
+        <button class="drawer-label" type="button" aria-expanded="false" aria-controls="d-prof-learning" data-nav="prof-learning">Professional Learning<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+        <ul class="drawer-sub" id="d-prof-learning" hidden>
+          <li><a href="elementary-school.html">Elementary School</a></li>
+          <li><a href="middle-school.html">Middle School</a></li>
+          <li><a href="high-school.html">High School</a></li>
+        </ul>
+      </li>
+      <li class="drawer-section">
+        <button class="drawer-label" type="button" aria-expanded="false" aria-controls="d-week" data-nav="pd-week">Summer PD<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+        <ul class="drawer-sub" id="d-week" hidden>
+          <li><a href="professional-learning.html">Overview</a></li>
+          <li><a href="professional-learning.html#benefits">Participant benefits</a></li>
+          <li><a href="professional-learning.html#tracks">Workshop tracks</a></li>
+          <li><a href="professional-learning.html#support">Year-round support</a></li>
+          <li><a href="professional-learning.html#dates">Important dates</a></li>
+        </ul>
+      </li>
+      <li class="drawer-section">
+        <button class="drawer-label" type="button" aria-expanded="false" aria-controls="d-research" data-nav="research">Research<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+        <ul class="drawer-sub" id="d-research" hidden>
+          <li><a href="research.html">Overview</a></li>
+          <li><a href="research.html#funders">Funders</a></li>
+        </ul>
+      </li>
+      <li class="drawer-section"><a class="drawer-label" href="contact.html" data-nav="contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main id="main" tabindex="-1">
+<div class="page-hero on-dark">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <ol><li><a href="index.html">Home</a></li><li><a href="team.html">Team</a></li><li><span aria-current="page">Dennis Brylow</span></li></ol>
+    </nav>
+    <p class="eyebrow">Project director</p>
+    <h1>Dr. Dennis Brylow</h1>
+    <p class="lede">Professor and Chair of Computer Science at Marquette University.</p>
+  </div>
+</div>
+
+<section aria-labelledby="bioTitle">
+  <div class="wrap profile">
+    <div class="profile-side">
+      <div class="portrait" role="img" aria-label="Portrait of Dr. Dennis Brylow (photo to come)">
+        <div><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>Portrait photo slot</div>
+      </div>
+      <div class="card">
+        <h2>At a glance</h2>
+        <dl class="kv">
+          <div><dt>Position</dt><dd>Professor and Chair, Department of Computer Science</dd></div>
+          <div><dt>Education</dt><dd>Ph.D., Purdue University, 2003</dd></div>
+          <div><dt>Office</dt><dd>Cudahy Hall 201C, Marquette University</dd></div>
+          <div><dt>Phone</dt><dd>TBD</dd></div>
+          <div><dt>Email</dt><dd>TBD</dd></div>
+          <div><dt>Website</dt><dd><a href="https://www.cs.mu.edu/~brylow/" target="_blank" rel="noopener">cs.mu.edu/~brylow</a></dd></div>
+        </dl>
+      </div>
+      <figure class="figure-inline"><img src="img/web/2019_server_rack_DB.jpg" alt="Dennis Brylow standing beside a server rack in a Marquette computer lab." width="900" height="598" loading="lazy"><figcaption>In a Marquette systems lab, 2019.</figcaption></figure>
+<div class="card mucs-card">
+        <img src="img/mucs-logo.png" alt="Marquette University Computer Science" width="238" height="307">
+        <p>Department of Computer Science, Klingler College of Arts and Sciences</p>
+      </div>
+    </div>
+
+    <div style="display:grid;gap:36px;min-width:0">
+      <div class="prose">
+        <h2 id="bioTitle" style="font-size:var(--step-3)">Sixteen years of CS teacher training</h2>
+        <p>Dennis Brylow has spent sixteen years building a computer science teaching community in Wisconsin. In 2010 he represented Marquette's computer science faculty in the coalition of state officials, high school teachers, and universities that became PUMP-CS. He has led the project ever since, through workshops, summer institutes, alternative licensure, state standards, and research on how CS teachers are prepared.</p>
+        <p>He directs Marquette's relationship with Code.org as its Regional Partner for Wisconsin, and his PISCES Lab (Promoting Innovative Systems for Computing Education in Schools) has earned four NSF awards since 2014. Over the past decade he has been principal investigator on just over $5 million in grant funding from the National Science Foundation, Cisco, Google, Intel, and others.</p>
+        <blockquote>“Computer science has become a foundational skill.”<cite>Dennis Brylow, on Wisconsin's first K–12 CS standards, 2017</cite></blockquote>
+      </div>
+
+      <div>
+        <figure class="figure-inline" style="margin-bottom:22px"><img src="img/web/dennis-brylow-teaching-2025-2.jpg" alt="Dennis Brylow pointing toward a screen while teaching a class." width="1200" height="800" loading="lazy"><figcaption>Teaching at Marquette, 2025.</figcaption></figure>
+<div class="section-head" style="margin-bottom:16px"><h2 style="font-size:var(--step-2)">Highlights in K–12 computer science</h2></div>
+        <ul class="milestones">
+          <li><span class="yr">2010</span><div><b>Helps found PUMP-CS</b>Plans Wisconsin's first CS-specific teacher workshops with DPI, teachers, and universities.</div></li>
+          <li><span class="yr">2014</span><div><b>First NSF teacher-preparation award</b>A two-track ECS and CSP sequence with UW–La Crosse, including a CS methods course for endorsement.</div></li>
+          <li><span class="yr">2016</span><div><b>Certifying teachers across MPS</b>A $1 million NSF award to prepare 200 Milwaukee Public Schools teachers to teach CS.</div></li>
+          <li><span class="yr">2017</span><div><b>Co-chairs Wisconsin's CS standards</b>Wisconsin's first K–12 computer science standards, approved in June 2017.</div></li>
+          <li><span class="yr">2019</span><div><b>Research-practice partnership</b>A nearly $2 million NSF study of CS education in an urban district, with MPS, AIR, and The Learning Partnership.</div></li>
+          <li><span class="yr">2020</span><div><b>Project {FUTURE}</b>Elementary CS with Sacred Heart University, Cooperative Educational Services (CT), and MPS, reaching 750 teachers.</div></li>
+          <li><span class="yr">2025</span><div><b>NSF Computer Science for All award</b>Bootcamp-based PD and a learning community for ECS teachers in MPS.</div></li>
+        </ul>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3>Research</h3>
+          <p>Tools for people who design, build, or teach complex systems, with a focus on embedded, real-time, and interrupt-driven systems, programming languages, and software engineering. His Embedded Xinu operating system is used to teach OS courses on real hardware.</p>
+          <p>He also directs Marquette's NSF-funded <a href="https://reu.cs.mu.edu/" target="_blank" rel="noopener">Data Science Across the Disciplines REU</a> site, now in its third three-year grant.</p>
+        </div>
+        <div class="card">
+          <h3>Teaching and writing</h3>
+          <p>He has taught Operating Systems at Marquette nearly every spring since 2010, along with Compiler Construction, Programming Languages, Embedded Systems, and Principles of Design.</p>
+          <p>He is lead co-author, with J. Glenn Brookshear, of the textbook<a href="https://epublications.marquette.edu/marq_fac-book/193/" target="_blank" rel="noopener"> <i>Computer Science: An Overview</i> (11th–13th editions)</a</p>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-head" style="margin-bottom:8px"><h2 style="font-size:var(--step-2)">Selected publications</h2></div>
+        <ul class="pub-list">
+          <li><a href="https://dl.acm.org/doi/10.1145/3641554.3701952" target="_blank" rel="noopener">Addressing the Computer Science Teacher Shortage: A Case Study of Wisconsin Public High Schools</a><span class="venue">SIGCSE 2025</span></li>
+          <li><a href="https://dl.acm.org/doi/10.1145/3569945" target="_blank" rel="noopener">Teacher Attitudes &amp; Beliefs in Computer Science (T-ABC)</a><span class="venue">ACM Transactions on Computing Education, 2023</span></li>
+          <li><a href="https://dl.acm.org/doi/10.1145/3641554.3701955" target="_blank" rel="noopener">Unlocking Student Potential With TA-Bot: Timely Submissions and Improved Code Style</a><span class="venue">SIGCSE 2025</span></li>
+          <li><a href="https://doi.org/10.1109/FIE63693.2025.11328653" target="_blank" rel="noopener">Can LLMs Be Fair Graders? Only If You Bribe Them with the Right Rubric</a><span class="venue">Frontiers in Education 2025</span></li>
+          <li><a href="https://dl.acm.org/doi/10.1145/3626252.3630959" target="_blank" rel="noopener">Using Embedded Xinu to Teach Operating Systems on Baremetal RISC-V</a><span class="venue">SIGCSE 2024</span></li>
+          <li><a href="https://doi.ieeecomputersociety.org/10.1109/ICSE.2001.919080" target="_blank" rel="noopener">Static Checking of Interrupt-Driven Software</a><span class="venue">ICSE 2001</span></li>
+        </ul>
+        <div class="btn-row"><a class="btn btn-primary" href="https://www.cs.mu.edu/~brylow/" target="_blank" rel="noopener">Full publication list on Dr. Brylow's site <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="logo-strip">
+  <div class="wrap">
+    <img src="img/logo-full.png" alt="PUMP-CS: Preparing the Upper Midwest for Pathways in Computer Science" width="440" height="512">
+    <p>PUMP-CS is a project of the Department of Computer Science at Marquette University, supporting Wisconsin K–12 computer science teachers since 2010.</p>
+    <img src="img/mucs-logo.png" alt="Marquette University Computer Science" width="238" height="307">
+  </div>
+</div>
+
+<footer class="on-dark">
+  <div class="wrap">
+    <div>
+      <h2>PUMP-CS</h2>
+      <p>Preparing the Upper Midwest for Principles of Computer Science<br>Department of Computer Science, Cudahy Hall<br>Marquette University, Milwaukee, WI 53201-1881</p>
+    </div>
+    <nav aria-label="Footer">
+      <h2>Pages</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">The PUMP-CS story</a></li>
+        <li><a href="elementary-school.html">Elementary School</a></li>
+        <li><a href="middle-school.html">Middle School</a></li>
+        <li><a href="high-school.html">High School</a></li>
+        <li><a href="professional-learning.html">Summer PD</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://pumpcs.mu.edu/" target="_blank" rel="noopener">PUMP-CS project site</a></li>
+        <li><a href="https://www.cs.mu.edu/" target="_blank" rel="noopener">Marquette Computer Science</a></li>
+        <li><a href="https://www.cs.mu.edu/~brylow/" target="_blank" rel="noopener">Dr. Brylow's faculty site</a></li>
+        <li><a href="https://dpi.wi.gov/computer-science" target="_blank" rel="noopener">Wisconsin DPI Computer Science</a></li>
+      </ul>
+    </div>
+    <p class="fine">© 2026 PUMP-CS Project, Marquette University. Past work supported by the National Science Foundation and the U.S. Department of Education; content does not necessarily reflect the views of the funders.</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

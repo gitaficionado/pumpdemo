@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Middle School | PUMP-CS</title>
+<meta name="description" content="Preparing the Upper Midwest for Pathways in Computer Science (PUMP-CS) at Marquette University: sixteen years of K-12 computer science professional learning in Wisconsin.">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=Roboto+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page-id="middle">
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="appbar" id="appbar">
+  <div class="wrap">
+    <a class="brand" href="index.html" data-nav="home">
+      <img src="img/logo-mark.png" alt="" width="57" height="60">
+      <span class="brand-text"><b>Preparing the Upper Midwest</b><span>for Pathways in Computer Science</span></span>
+    </a>
+    <nav class="nav-desktop" aria-label="Main">
+      <ul>
+        <li><a class="nav-btn" href="index.html" data-nav="home"><span>Home</span></a></li>
+        <li>
+          <button class="nav-btn" type="button" aria-expanded="false" aria-controls="m-about" data-nav="about"><span>About</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+          <ul class="submenu" id="m-about" hidden>
+            <li><a href="history.html">The PUMP-CS story</a></li>
+            <li><a href="partners.html">Partners</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="nav-btn is-current" type="button" aria-expanded="false" aria-controls="m-prof-learning" data-nav="prof-learning"><span>Professional Learning</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+          <ul class="submenu" id="m-prof-learning" hidden>
+            <li><a href="elementary-school.html">Elementary School</a></li>
+            <li><a href="middle-school.html" aria-current="page">Middle School</a></li>
+            <li><a href="high-school.html">High School</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="nav-btn" type="button" aria-expanded="false" aria-controls="m-week" data-nav="pd-week"><span>Summer PD</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+          <ul class="submenu" id="m-week" hidden>
+            <li><a href="professional-learning.html">Overview</a></li>
+            <li><a href="professional-learning.html#benefits">Participant benefits</a></li>
+            <li><a href="professional-learning.html#tracks">Workshop tracks</a></li>
+            <li><a href="professional-learning.html#support">Year-round support</a></li>
+            <li><a href="professional-learning.html#dates">Important dates</a></li>
+          </ul>
+        </li>
+        <li>
+          <button class="nav-btn" type="button" aria-expanded="false" aria-controls="m-research" data-nav="research"><span>Research</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+          <ul class="submenu" id="m-research" hidden>
+            <li><a href="research.html">Overview</a></li>
+            <li><a href="research.html#funders">Funders</a></li>
+          </ul>
+        </li>
+        <li><a class="cta-btn" href="contact.html" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="icon-btn menu-toggle" type="button" id="menuOpen" aria-label="Open navigation menu" aria-haspopup="dialog" aria-controls="drawer" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="scrim" id="scrim" hidden></div>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Navigation menu" hidden>
+  <div class="drawer-head">
+    <img src="img/logo-mark.png" alt="PUMP-CS">
+    <button class="icon-btn" type="button" id="menuClose" aria-label="Close navigation menu">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Main (mobile)">
+    <ul>
+      <li class="drawer-section"><a class="drawer-label" href="index.html" data-nav="home">Home</a></li>
+      <li class="drawer-section">
+        <button class="drawer-label" type="button" aria-expanded="false" aria-controls="d-about" data-nav="about">About<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+        <ul class="drawer-sub" id="d-about" hidden>
+          <li><a href="history.html">The PUMP-CS story</a></li>
+          <li><a href="partners.html">Partners</a></li>
+          <li><a href="team.html">Team</a></li>
+        </ul>
+      </li>
+      <li class="drawer-section">
+        <button class="drawer-label" type="button" aria-expanded="true" aria-controls="d-prof-learning" data-nav="prof-learning">Professional Learning<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+        <ul class="drawer-sub" id="d-prof-learning">
+          <li><a href="elementary-school.html">Elementary School</a></li>
+          <li><a href="middle-school.html" aria-current="page">Middle School</a></li>
+          <li><a href="high-school.html">High School</a></li>
+        </ul>
+      </li>
+      <li class="drawer-section">
+        <button class="drawer-label" type="button" aria-expanded="false" aria-controls="d-week" data-nav="pd-week">Summer PD<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+        <ul class="drawer-sub" id="d-week" hidden>
+          <li><a href="professional-learning.html">Overview</a></li>
+          <li><a href="professional-learning.html#benefits">Participant benefits</a></li>
+          <li><a href="professional-learning.html#tracks">Workshop tracks</a></li>
+          <li><a href="professional-learning.html#support">Year-round support</a></li>
+          <li><a href="professional-learning.html#dates">Important dates</a></li>
+        </ul>
+      </li>
+      <li class="drawer-section">
+        <button class="drawer-label" type="button" aria-expanded="false" aria-controls="d-research" data-nav="research">Research<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.59 8.59 12 13.17 7.41 8.59 6 10l6 6 6-6z"/></svg></button>
+        <ul class="drawer-sub" id="d-research" hidden>
+          <li><a href="research.html">Overview</a></li>
+          <li><a href="research.html#funders">Funders</a></li>
+        </ul>
+      </li>
+      <li class="drawer-section"><a class="drawer-label" href="contact.html" data-nav="contact">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+<main id="main" tabindex="-1">
+<div class="page-hero on-dark with-photo">
+  <div class="wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><span class="crumb-plain">Professional Learning</span></li><li><span aria-current="page">Middle School</span></li></ol></nav>
+    <div class="hero-split">
+      <div>
+      <p class="eyebrow">Middle School · Grades 6–8</p>
+      <h1>Where students continue to build</h1>
+      <p class="lede">Middle school is when many students are open to new experiences. PUMP-CS helps grades 6–8 teachers launch stand-alone CS courses or bring computing into the STEM classes they already teach.</p>
+      </div>
+      <figure class="hero-figure"><img src="img/web/Scratch_in_Classroom.jpg" alt="A classroom of students programming on laptops while a lesson is projected." width="800" height="600"><figcaption>A middle school class programming together.</figcaption></figure>
+    </div>
+  </div>
+</div>
+<section aria-labelledby="gsTitle">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Getting started</p><h2 id="gsTitle">Three ingredients designed to bring CS to grades 6–8</h2>
+      <p>Whether you teach technology, math, science, or a specials rotation, there is a starting point that fits your schedule and your students.</p></div>
+    <div class="org-grid">
+      <div class="org lead"><h3>No experience required</h3><p>PUMP-CS has prepared teachers who are new to computer science since 2010. Workshops start from the basics and build toward a full course.</p></div>
+      <div class="org lead"><h3>A stand-alone course</h3><p>Launch a semester or year-long course with Code.org's CS Discoveries, a curriculum PUMP-CS has supported in cohorts around the state.</p></div>
+      <div class="org lead"><h3>CS inside STEM</h3><p>Add computer science modules to the science, math, and technology curricula you already teach.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="tools" aria-labelledby="toolsTitle">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">Curricula &amp; tools</p><h2 id="toolsTitle">What you may explore</h2>
+      <p>The final list for each workshop will be confirmed with the program announcement.</p></div>
+    <div class="org-grid">
+      <div class="org"><h3>Code.org CS Discoveries</h3><p>An introductory course covering problem solving, web development, games and animations, data, and physical computing.</p></div>
+      <div class="org"><h3>Project GUTS</h3><p>Computational modeling and simulation activities that connect CS to middle school science. PUMP-CS piloted Project GUTS with Wisconsin teachers.</p></div>
+      <div class="org"><h3>Physical computing</h3><p>Programmable boards and robots that connect code to the real world. See the <a href="elementary-school.html#tools">PK–8 physical computing tools</a>.</p></div>
+      <div class="org"><h3>Block-based coding</h3><p>Scratch and similar environments that let students build interactive stories, games, and animations.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="learn" aria-labelledby="learnTitle">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">What you'll do</p><h2 id="learnTitle">Practice as a student, plan as a teacher</h2></div>
+    <div class="org-grid">
+      <div class="org"><h3>Work through the lessons</h3><p>Complete the activities your students will do, so you can anticipate questions and misconceptions.</p></div>
+      <div class="org"><h3>Model and discuss</h3><p>Facilitators model lessons and teaching strategies, then teachers practice and reflect together.</p></div>
+      <div class="org"><h3>Plan for equity</h3><p>Use inclusive strategies that help every student, including those underrepresented in computing, see a place for themselves.</p></div>
+      <div class="org"><h3>Map your year</h3><p>Leave with a plan for pacing, materials, and support for the coming school year.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="record" aria-labelledby="recTitle">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">PUMP-CS in Wisconsin middle schools</p><h2 id="recTitle">Taking middle school CS statewide</h2>
+      <p>Middle school professional learning began on the Marquette campus and grew to regional cohorts across Wisconsin.</p></div>
+    <ul class="record">
+      <li><span class="yr">2016</span><div><b>CS in every MPS middle school</b>A $1 million NSF award set out to certify enough Milwaukee Public Schools teachers to bring CS to every school in the district, including every middle school.</div></li>
+      <li><span class="yr">2017</span><div><b>Access for every middle schooler</b>Wisconsin's first K–12 CS standards called for every middle school student to have access to computer science instruction.</div></li>
+      <li><span class="yr">2019</span><div><b>Regional CS Discoveries cohorts</b>Workshops that started at Marquette expanded to Eagle River, Green Bay, and Wausau with partners including CESA 7, NWTC, NTC, Wausau Schools, and Northland Pines, reducing travel for teachers in regions with little prior access.</div></li>
+      <li><span class="yr">Ongoing</span><div><b>60+ hours of support</b>Middle school programs often include 60 or more hours of professional development across a summer institute and academic-year follow-up sessions.</div></li>
+    </ul>
+  </div>
+</section>
+
+<section id="photos" aria-labelledby="photoTitle">
+  <div class="wrap">
+    <div class="section-head"><p class="eyebrow">In the classroom</p><h2 id="photoTitle">Students building with code</h2></div>
+    <div class="mosaic ">
+      <figure><img src="img/web/Three_Sudents_with_HP.jpg" alt="Three smiling students in school uniforms sit behind laptops." loading="lazy"><figcaption>Proud programmers.</figcaption></figure>
+      <figure><img src="img/web/Scratch_in_Classroom.jpg" alt="A classroom of students programming on laptops while a lesson is projected." loading="lazy"><figcaption>Programming as a class.</figcaption></figure>
+      <figure><img src="img/web/Students_Coding.jpg" alt="Students at desks building block-based programs on laptops." loading="lazy"><figcaption>Block-based coding.</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="standards" aria-labelledby="stdTitle">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Standards</p>
+      <h2 id="stdTitle">Aligned to the standards that guide Wisconsin</h2>
+      <p>Workshops align with the 2026 CSTA PK–12 CS Standards, and connect with Wisconsin's Academic Standards for Computer Science, updated in November 2025. PUMP-CS director Dennis Brylow co-chaired the committee that wrote Wisconsin's first K–12 computer science standards, approved in 2017.</p>
+    </div>
+  </div>
+</section>
+
+<section id="support" aria-labelledby="supportTitle">
+  <div class="wrap support-grid">
+    <div>
+      <div class="section-head"><p class="eyebrow">Year-round support</p><h2 id="supportTitle">Keep learning after the summer</h2></div>
+      <div class="prose">
+        <p>PUMP-CS will help coordinate ongoing professional learning through the school year, and the Wisconsin Dairyland CSTA chapter plans monthly professional learning community sessions so you can share ideas with other Wisconsin educators. Participant stipends are administered directly by CSTA.</p>
+        <p>The model grows out of the Virtual Professional Learning Communities PUMP-CS has run for its teacher cohorts, which CSTA members from across the region have attended so they could start similar communities in their own areas.</p>
+      </div>
+    </div>
+    <ol class="cycle" aria-label="How support continues through the year">
+      <li><b>Summer workshop</b>Hands-on, facilitator-led training with Wisconsin teachers.</li>
+      <li><b>Classroom launch</b>Bring the curriculum and tools to your students in the fall.</li>
+      <li><b>Monthly PLC sessions</b>Share what is working with other Wisconsin educators.</li>
+      <li><b>Follow-up and coaching</b>Return sessions and peer support to sustain your program.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="band" id="dates" aria-labelledby="datesTitle">
+  <div class="wrap callouts">
+    <div class="callout">
+      <h3 id="datesTitle">Dates to be announced</h3>
+      <p>Exact dates, location, and application details will be announced. Questions? Visit the <a href="contact.html">contact page</a>.</p>
+    </div>
+    <div class="callout">
+      <h3>Teaching other grades?</h3>
+      <p>See the <a href="elementary-school.html">elementary school (PK–5)</a> and <a href="high-school.html">high school (9–12)</a> pages.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="logo-strip">
+  <div class="wrap">
+    <img src="img/logo-full.png" alt="PUMP-CS: Preparing the Upper Midwest for Principles of Computer Science" width="440" height="512">
+    <p>PUMP-CS is a project of the Department of Computer Science at Marquette University, supporting Wisconsin K–12 computer science teachers since 2010.</p>
+    <img src="img/mucs-logo.png" alt="Marquette University Computer Science" width="238" height="307">
+  </div>
+</div>
+
+<footer class="on-dark">
+  <div class="wrap">
+    <div>
+      <h2>PUMP-CS</h2>
+      <p>Preparing the Upper Midwest for Principles of Computer Science<br>Department of Computer Science, Cudahy Hall<br>Marquette University, Milwaukee, WI 53201-1881</p>
+    </div>
+    <nav aria-label="Footer">
+      <h2>Pages</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">The PUMP-CS story</a></li>
+        <li><a href="elementary-school.html">Elementary School</a></li>
+        <li><a href="middle-school.html">Middle School</a></li>
+        <li><a href="high-school.html">High School</a></li>
+        <li><a href="professional-learning.html">Summer PD</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>Links</h2>
+      <ul>
+        <li><a href="https://pumpcs.mu.edu/" target="_blank" rel="noopener">PUMP-CS project site</a></li>
+        <li><a href="https://www.cs.mu.edu/" target="_blank" rel="noopener">Marquette Computer Science</a></li>
+        <li><a href="https://www.cs.mu.edu/~brylow/" target="_blank" rel="noopener">Dr. Brylow's faculty site</a></li>
+        <li><a href="https://dpi.wi.gov/computer-science" target="_blank" rel="noopener">Wisconsin DPI Computer Science</a></li>
+      </ul>
+    </div>
+    <p class="fine">© 2026 PUMP-CS Project, Marquette University. Past work supported by the National Science Foundation and the U.S. Department of Education; content does not necessarily reflect the views of the funders.</p>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
